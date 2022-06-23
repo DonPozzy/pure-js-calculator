@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pure js calculator</title>
+</head>
+<body>
+    <script>
+        const num1 = parseFloat(prompt("Enter first number"));
+        const operator = prompt('Enter operator(+, -, *, /)');
+        const num2 = parseFloat(prompt("Enter second number"));
+
+        let output = 0;
+
+        if(isNaN(num1) || isNaN(num2)){
+            alert('Invalid entry');
+        } else{
+            if(operator == '+'){
+            output = num1 + num2;
+        }else if(operator == '-'){
+            output = num1 - num2;
+        }else if(operator == '*'){
+            output = num1 * num2;
+        }else if(operator == '/'){
+            output = num1 / num2;
+        }
+        
+        alert('answer =' + ' ' + output)
+        }
+
+       
+    </script>
+</body>
+</html>
